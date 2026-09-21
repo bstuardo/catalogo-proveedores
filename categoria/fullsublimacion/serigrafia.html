@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serigrafía — Full Sublimación</title>
+<link rel="stylesheet" href="../../static/style.css?v=21-09-2026%2017%3A27">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Catálogo de proveedores</a>
+  <nav>
+    <a href="../../index.html">Categorías</a>
+    <a href="../../tabla.html">Tabla general</a>
+    <a href="../../comparables.html">Comparables</a>
+    <a href="../../bandeja.html">Bandeja de revisión</a>
+    <a href="../../cambios.html">Cambios recientes</a>
+  </nav>
+</header>
+<main>
+
+<a class="volver" href="../../index.html">&larr; Categorías</a>
+<h1>Serigrafía <span class="badge proveedor-fullsublimacion">Full Sublimación</span></h1>
+<p class="subtitle">3 productos.</p>
+
+
+
+
+<div class="grid-productos" id="grid-productos">
+  
+  <a class="card-producto" href="../../producto/fullsublimacion/101604.html" data-subcategoria="">
+    <img src="https://cdn.shopify.com/s/files/1/0586/5802/9706/files/720240712-1827-mbucwr.jpg?v=1727587771" alt="Máquina Serigráfica 1 Color 1 Estación" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Máquina Serigráfica 1 Color 1 Estación</div>
+      
+      <span class="badge agotado">agotado</span>
+      
+      
+      <div>
+        <span class="precio">$139.990</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/fullsublimacion/101606.html" data-subcategoria="">
+    <img src="https://cdn.shopify.com/s/files/1/0586/5802/9706/files/420240712-24296-qbjfk9.jpg?v=1727279935" alt="Pulpo Manual 4X4" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Pulpo Manual 4X4</div>
+      
+      <span class="badge agotado">agotado</span>
+      
+      
+      <div>
+        <span class="precio">$899.990</span>
+        <span class="precio-regular">$1.090.000</span>
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/fullsublimacion/101605.html" data-subcategoria="">
+    <img src="https://cdn.shopify.com/s/files/1/0586/5802/9706/files/120240712-24335-1x30ut0_4b6d4d1c-fc12-437a-8aee-9aa5a22a47f8.jpg?v=1731694908" alt="Pulpo Serigráfico 4 Colores 1 Estación Sobremesa" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Pulpo Serigráfico 4 Colores 1 Estación Sobremesa</div>
+      
+      <span class="badge agotado">agotado</span>
+      
+      
+      <div>
+        <span class="precio">$306.990</span>
+        <span class="precio-regular">$349.990</span>
+      </div>
+      
+    </div>
+  </a>
+  
+</div>
+
+
+<script>
+(function() {
+  var sel = document.getElementById("f-subcategoria");
+  if (!sel) return;
+  var tarjetas = document.querySelectorAll("#grid-productos .card-producto");
+  sel.addEventListener("change", function() {
+    var val = sel.value;
+    tarjetas.forEach(function(t) {
+      t.style.display = (!val || t.dataset.subcategoria === val) ? "" : "none";
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 21-09-2026 17:27.
+</footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manualidades e Insumos — PapelesLee</title>
+<link rel="stylesheet" href="../../static/style.css?v=21-09-2026%2017%3A27">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Catálogo de proveedores</a>
+  <nav>
+    <a href="../../index.html">Categorías</a>
+    <a href="../../tabla.html">Tabla general</a>
+    <a href="../../comparables.html">Comparables</a>
+    <a href="../../bandeja.html">Bandeja de revisión</a>
+    <a href="../../cambios.html">Cambios recientes</a>
+  </nav>
+</header>
+<main>
+
+<a class="volver" href="../../index.html">&larr; Categorías</a>
+<h1>Manualidades e Insumos <span class="badge proveedor-papeleslee">PapelesLee</span></h1>
+<p class="subtitle">3 productos.</p>
+
+
+
+
+<div class="grid-productos" id="grid-productos">
+  
+  <a class="card-producto" href="../../producto/papeleslee/chapa-56-mm-circular-100-unidades.html" data-subcategoria="">
+    <img src="https://cdnx.jumpseller.com/todoenimpresion/image/37890183/chapitas.jpg?1690074075" alt="CHAPA 56 MM CIRCULAR 100 unidades" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">CHAPA 56 MM CIRCULAR 100 unidades</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$9.990</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/papeleslee/chapa-58-mm-circular.html" data-subcategoria="">
+    <img src="https://cdnx.jumpseller.com/todoenimpresion/image/37890191/chapitas.jpg?1690074142" alt="CHAPA 58 MM CIRCULAR" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">CHAPA 58 MM CIRCULAR</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$9.990</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/papeleslee/gorro-malla-de-poliester-full-color.html" data-subcategoria="">
+    <img src="https://cdnx.jumpseller.com/todoenimpresion/image/79300821/resize/1200/630?1785207822" alt="Gorro Malla de Poliéster Full Color" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Gorro Malla de Poliéster Full Color</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$750</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+</div>
+
+
+<script>
+(function() {
+  var sel = document.getElementById("f-subcategoria");
+  if (!sel) return;
+  var tarjetas = document.querySelectorAll("#grid-productos .card-producto");
+  sel.addEventListener("change", function() {
+    var val = sel.value;
+    tarjetas.forEach(function(t) {
+      t.style.display = (!val || t.dataset.subcategoria === val) ? "" : "none";
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 21-09-2026 17:27.
+</footer>
+</body>
+</html>

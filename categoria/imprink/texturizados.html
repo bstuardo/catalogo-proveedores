@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texturizados — Imprink</title>
+<link rel="stylesheet" href="../../static/style.css?v=10-09-2026%2003%3A35">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Catálogo de proveedores</a>
+  <nav>
+    <a href="../../index.html">Categorías</a>
+    <a href="../../tabla.html">Tabla general</a>
+    <a href="../../comparables.html">Comparables</a>
+    <a href="../../bandeja.html">Bandeja de revisión</a>
+    <a href="../../cambios.html">Cambios recientes</a>
+  </nav>
+</header>
+<main>
+
+<a class="volver" href="../../index.html">&larr; Categorías</a>
+<h1>Texturizados <span class="badge proveedor-imprink">Imprink</span></h1>
+<p class="subtitle">2 productos.</p>
+
+
+
+
+<div class="grid-productos" id="grid-productos">
+  
+  <a class="card-producto" href="../../producto/imprink/M353.html" data-subcategoria="">
+    <img src="https://cdnx.jumpseller.com/imprink/image/78607365/resize/1200/1200?1783539369" alt="Opalina texturizada blanca glossy CUERO INTENSO A4 / 20 hojas" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Opalina texturizada blanca glossy CUERO INTENSO A4 / 20 hojas</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$3.300</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/imprink/M094.html" data-subcategoria="">
+    <img src="https://cdnx.jumpseller.com/imprink/image/12441625/resize/1200/1200?1651768232" alt="Papel Adhesivo Matte TEXTURA : Cuero Blanco A4/100g/20 Hojas" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Papel Adhesivo Matte TEXTURA : Cuero Blanco A4/100g/20 Hojas</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$4.390</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+</div>
+
+
+<script>
+(function() {
+  var sel = document.getElementById("f-subcategoria");
+  if (!sel) return;
+  var tarjetas = document.querySelectorAll("#grid-productos .card-producto");
+  sel.addEventListener("change", function() {
+    var val = sel.value;
+    tarjetas.forEach(function(t) {
+      t.style.display = (!val || t.dataset.subcategoria === val) ? "" : "none";
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 10-09-2026 03:35.
+</footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tatuajes — Imprink</title>
+<link rel="stylesheet" href="../../static/style.css?v=21-09-2026%2017%3A27">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Catálogo de proveedores</a>
+  <nav>
+    <a href="../../index.html">Categorías</a>
+    <a href="../../tabla.html">Tabla general</a>
+    <a href="../../comparables.html">Comparables</a>
+    <a href="../../bandeja.html">Bandeja de revisión</a>
+    <a href="../../cambios.html">Cambios recientes</a>
+  </nav>
+</header>
+<main>
+
+<a class="volver" href="../../index.html">&larr; Categorías</a>
+<h1>Tatuajes <span class="badge proveedor-imprink">Imprink</span></h1>
+<p class="subtitle">2 productos.</p>
+
+
+
+
+<div class="grid-productos" id="grid-productos">
+  
+  <a class="card-producto" href="../../producto/imprink/C0009.html" data-subcategoria="">
+    <img src="https://cdnx.jumpseller.com/imprink/image/44781757/resize/1200/1200?1771430661" alt="CAJA 20 RESMAS!! Tatuaje Temporal Imprimible Transparente A4/5 Hojas" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">CAJA 20 RESMAS!! Tatuaje Temporal Imprimible Transparente A4/5 Hojas</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$139.800</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/imprink/U0010.html" data-subcategoria="">
+    <img src="https://cdnx.jumpseller.com/imprink/image/36893829/resize/1200/1200?1771430639" alt="Tatuaje Temporal Imprimible Transparente A4/5 Hojas" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Tatuaje Temporal Imprimible Transparente A4/5 Hojas</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$7.990</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+</div>
+
+
+<script>
+(function() {
+  var sel = document.getElementById("f-subcategoria");
+  if (!sel) return;
+  var tarjetas = document.querySelectorAll("#grid-productos .card-producto");
+  sel.addEventListener("change", function() {
+    var val = sel.value;
+    tarjetas.forEach(function(t) {
+      t.style.display = (!val || t.dataset.subcategoria === val) ? "" : "none";
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 21-09-2026 17:27.
+</footer>
+</body>
+</html>
