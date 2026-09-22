@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CLASE VIRTUAL &#34;CREA TU PROPIO PAÑO DE DTF&#34; - GRABACIÓN DE ZOOM — Insumos con Amor</title>
-<link rel="stylesheet" href="../../static/style.css?v=21-09-2026%2019%3A33">
+<link rel="stylesheet" href="../../static/style.css?v=22-09-2026%2003%3A35">
 
 </head>
 <body>
@@ -75,12 +75,41 @@
 </div>
 
 
+<h2>Evolución de precio</h2>
+<canvas id="chart-precio" height="90"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+new Chart(document.getElementById("chart-precio"), {
+  type: "line",
+  data: {
+    labels: ["2026-09-21", "2026-09-22"],
+    datasets: [{
+      label: "Precio (CLP)",
+      data: [3000, 3000],
+      borderColor: "#b5461a",
+      backgroundColor: "rgba(181,70,26,0.12)",
+      spanGaps: true,
+      tension: 0.15,
+    }]
+  },
+  options: { scales: { y: { beginAtZero: false } }, plugins: { legend: { display: false } } }
+});
+</script>
+
 
 
 <h2>Histórico diario</h2>
 <table>
   <thead><tr><th>Fecha</th><th>Precio</th><th>Precio regular</th><th>Stock</th><th>Captura</th></tr></thead>
   <tbody>
+  
+    <tr>
+      <td>2026-09-22</td>
+      <td>$3.000</td>
+      <td>—</td>
+      <td>agotado</td>
+      <td>OK</td>
+    </tr>
   
     <tr>
       <td>2026-09-21</td>
@@ -96,7 +125,7 @@
 
 </main>
 <footer class="site-footer">
-  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 21-09-2026 19:33.
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 22-09-2026 03:35.
 </footer>
 </body>
 </html>
