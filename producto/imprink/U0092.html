@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Papel Fotografico Doble Faz Semi-glossy A4 / 260gr / 100 Hojas — Imprink</title>
-<link rel="stylesheet" href="../../static/style.css?v=24-09-2026%2009%3A36">
+<link rel="stylesheet" href="../../static/style.css?v=25-09-2026%2009%3A37">
 
 </head>
 <body>
@@ -68,12 +68,41 @@
 </div>
 
 
+<h2>Evolución de precio</h2>
+<canvas id="chart-precio" height="90"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+new Chart(document.getElementById("chart-precio"), {
+  type: "line",
+  data: {
+    labels: ["2026-09-24", "2026-09-25"],
+    datasets: [{
+      label: "Precio (CLP)",
+      data: [10750, 10750],
+      borderColor: "#b5461a",
+      backgroundColor: "rgba(181,70,26,0.12)",
+      spanGaps: true,
+      tension: 0.15,
+    }]
+  },
+  options: { scales: { y: { beginAtZero: false } }, plugins: { legend: { display: false } } }
+});
+</script>
+
 
 
 <h2>Histórico diario</h2>
 <table>
   <thead><tr><th>Fecha</th><th>Precio</th><th>Precio regular</th><th>Stock</th><th>Captura</th></tr></thead>
   <tbody>
+  
+    <tr>
+      <td>2026-09-25</td>
+      <td>$10.750</td>
+      <td>—</td>
+      <td>disponible</td>
+      <td>OK</td>
+    </tr>
   
     <tr>
       <td>2026-09-24</td>
@@ -89,7 +118,7 @@
 
 </main>
 <footer class="site-footer">
-  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 24-09-2026 09:36.
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 25-09-2026 09:37.
 </footer>
 </body>
 </html>
