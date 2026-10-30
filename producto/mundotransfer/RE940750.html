@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Repuesto Tapa Botella Termica ELR Niño Accesorio Inox. — MundoTransfer</title>
-<link rel="stylesheet" href="../../static/style.css?v=29-10-2026%2012%3A00">
+<link rel="stylesheet" href="../../static/style.css?v=30-10-2026%2009%3A36">
 
 </head>
 <body>
@@ -109,12 +109,41 @@ Cuidado térmico: No someter a temperaturas extremas ni esterilizar en agua hirv
 </div>
 
 
+<h2>Evolución de precio</h2>
+<canvas id="chart-precio" height="90"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+new Chart(document.getElementById("chart-precio"), {
+  type: "line",
+  data: {
+    labels: ["2026-10-29", "2026-10-30"],
+    datasets: [{
+      label: "Precio (CLP)",
+      data: [1690, 1690],
+      borderColor: "#b5461a",
+      backgroundColor: "rgba(181,70,26,0.12)",
+      spanGaps: true,
+      tension: 0.15,
+    }]
+  },
+  options: { scales: { y: { beginAtZero: false } }, plugins: { legend: { display: false } } }
+});
+</script>
+
 
 
 <h2>Histórico diario</h2>
 <table>
   <thead><tr><th>Fecha</th><th>Precio</th><th>Precio regular</th><th>Stock</th><th>Captura</th></tr></thead>
   <tbody>
+  
+    <tr>
+      <td>2026-10-30</td>
+      <td>$1.690</td>
+      <td>—</td>
+      <td>disponible</td>
+      <td>OK</td>
+    </tr>
   
     <tr>
       <td>2026-10-29</td>
@@ -130,7 +159,7 @@ Cuidado térmico: No someter a temperaturas extremas ni esterilizar en agua hirv
 
 </main>
 <footer class="site-footer">
-  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 29-10-2026 12:00.
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 30-10-2026 09:36.
 </footer>
 </body>
 </html>
