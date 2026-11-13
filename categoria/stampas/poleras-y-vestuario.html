@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poleras y vestuario — Stampas</title>
+<link rel="stylesheet" href="../../static/style.css?v=13-11-2026%2009%3A38">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Catálogo de proveedores</a>
+  <nav>
+    <a href="../../index.html">Categorías</a>
+    <a href="../../tabla.html">Tabla general</a>
+    <a href="../../comparables.html">Comparables</a>
+    <a href="../../bandeja.html">Bandeja de revisión</a>
+    <a href="../../cambios.html">Cambios recientes</a>
+  </nav>
+</header>
+<main>
+
+<a class="volver" href="../../index.html">&larr; Categorías</a>
+<h1>Poleras y vestuario <span class="badge proveedor-stampas">Stampas</span></h1>
+<p class="subtitle">7 productos.</p>
+
+
+
+
+<div class="grid-productos" id="grid-productos">
+  
+  <a class="card-producto" href="../../producto/stampas/PI-Z10.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/Z10.jpg" alt="Chaqueta Hombre Micropolar Anti-peeling" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Chaqueta Hombre Micropolar Anti-peeling</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/PI-Z11.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/Z11-B.jpg" alt="Chaqueta Mujer Micropolar Anti-peeling" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Chaqueta Mujer Micropolar Anti-peeling</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/PI-H68.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/h68-2026-900x900-1.jpg" alt="Delantal Pechera de Algodón 8oz" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Delantal Pechera de Algodón 8oz</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/PI-Z0.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/z0-01.jpg" alt="Polera Manga Corta Algodón Hombre" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Polera Manga Corta Algodón Hombre</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/PI-Z1.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/Z1-01.jpg" alt="Polera Manga Corta Algodón Mujer" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Polera Manga Corta Algodón Mujer</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/PI-Z4.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/Z4.jpg" alt="Polera Poliéster Hombre con Cuello" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Polera Poliéster Hombre con Cuello</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/PI-Z5.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/Z5.jpg" alt="Polera Poliéster Mujer con Cuello" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Polera Poliéster Mujer con Cuello</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+</div>
+
+
+<script>
+(function() {
+  var sel = document.getElementById("f-subcategoria");
+  if (!sel) return;
+  var tarjetas = document.querySelectorAll("#grid-productos .card-producto");
+  sel.addEventListener("change", function() {
+    var val = sel.value;
+    tarjetas.forEach(function(t) {
+      t.style.display = (!val || t.dataset.subcategoria === val) ? "" : "none";
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 13-11-2026 09:38.
+</footer>
+</body>
+</html>

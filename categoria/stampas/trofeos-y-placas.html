@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trofeos y placas — Stampas</title>
+<link rel="stylesheet" href="../../static/style.css?v=13-11-2026%2009%3A38">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Catálogo de proveedores</a>
+  <nav>
+    <a href="../../index.html">Categorías</a>
+    <a href="../../tabla.html">Tabla general</a>
+    <a href="../../comparables.html">Comparables</a>
+    <a href="../../bandeja.html">Bandeja de revisión</a>
+    <a href="../../cambios.html">Cambios recientes</a>
+  </nav>
+</header>
+<main>
+
+<a class="volver" href="../../index.html">&larr; Categorías</a>
+<h1>Trofeos y placas <span class="badge proveedor-stampas">Stampas</span></h1>
+<p class="subtitle">4 productos.</p>
+
+
+
+
+<div class="grid-productos" id="grid-productos">
+  
+  <a class="card-producto" href="../../producto/stampas/IB-CTA189.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/galvano_cristal_premiacion_reconocimiento_gota_CTA189_virgen.jpg" alt="Galvano Cristal CTA 189" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Galvano Cristal CTA 189</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/IB-LSA085.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/LSA85_2-700x677-1.jpg" alt="Galvano Cristal LSA 085" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Galvano Cristal LSA 085</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/IB-F020.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/020-50-1.jpg" alt="Medalla de Fierro 50mm F020" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Medalla de Fierro 50mm F020</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+  <a class="card-producto" href="../../producto/stampas/PI-A83.html" data-subcategoria="">
+    <img src="https://www.stampas.cl/wp-content/uploads/2026/11/A83-11-Principal.jpg" alt="Trofeo Galvano de Madera y Cristal «Fischer»" loading="lazy">
+    
+    <div class="body">
+      <div class="nombre">Trofeo Galvano de Madera y Cristal «Fischer»</div>
+      
+      <span class="badge disponible">disponible</span>
+      
+      
+      <div>
+        <span class="precio">$0</span>
+        
+      </div>
+      
+    </div>
+  </a>
+  
+</div>
+
+
+<script>
+(function() {
+  var sel = document.getElementById("f-subcategoria");
+  if (!sel) return;
+  var tarjetas = document.querySelectorAll("#grid-productos .card-producto");
+  sel.addEventListener("change", function() {
+    var val = sel.value;
+    tarjetas.forEach(function(t) {
+      t.style.display = (!val || t.dataset.subcategoria === val) ? "" : "none";
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  Datos capturados directamente desde los sitios de cada proveedor para uso interno. Última actualización: 13-11-2026 09:38.
+</footer>
+</body>
+</html>
